@@ -1,0 +1,1000 @@
+ 1080  vim Data_rhalphalib.py 
+ 1081  python Data_rhalphalib.py 2018 > rhal.out &
+ 1082  vim rhal.out 
+ 1083  ls
+ 1084  ls output/
+ 1085  ls ../sig25_v3/output/
+ 1086  cd output/
+ 1087  mkdir testModel
+ 1088  cd ../
+ 1089  python Data_rhalphalib.py 2018 > rhal.out &
+ 1090  vim rhal.out 
+ 1091  ls
+ 1092  python Data_rhalphalib.py 2018 > rhal.out &
+ 1093  diff Data_rhalphalib.py ../sig25_v5/Data_rhalphalib.py 
+ 1094  vim rhal.out 
+ 1095  vim final_vals.csv 
+ 1096  vim Data_rhalphalib.py 
+ 1097  rm final_vals.csv 
+ 1098  vim Data_rhalphalib.py 
+ 1099  cd ../sig25_v5/
+ 1100  ls
+ 1101  python drawDiagnostics.py
+ 1102  python makePlot.py 
+ 1103  vim shapes.sh 
+ 1104  ./make_workspace.sh 
+ 1105  ls
+ 1106  vim shapes.sh 
+ 1107  ./shapes.sh > shapes.txt &
+ 1108  jobs
+ 1109  cat shapes.txt 
+ 1110  jobs
+ 1111  ls
+ 1112  vim limit.sh 
+ 1113  jobs
+ 1114  cat shapes.txt 
+ 1115  jobs
+ 1116  top
+ 1117  jobs
+ 1118  ls
+ 1119  jobs
+ 1120  cat shapes.txt 
+ 1121  jobs
+ 1122  top
+ 1123  ls
+ 1124  jobs
+ 1125  ls
+ 1126  nohup ./limit.sh &
+ 1127  jobs
+ 1128  kill %1
+ 1129  nohup ./limit.sh > Lim.out &
+ 1130  jobs
+ 1131  exit
+ 1132  ls
+ 1133  cd CMSSW_10_2_13/src/
+ 1134  ls
+ 1135  cd sig25_v5/
+ 1136  ls
+ 1137  mv ptbin* plots/
+ 1138  ls
+ 1139  mv covariance_fit_* plots/
+ 1140  ls
+ 1141  cat Lim.out 
+ 1142  ls
+ 1143  vim limit.sh 
+ 1144  ./limit.sh > Lim.out &
+ 1145  cmsenv
+ 1146  ./limit.sh > Lim.out &
+ 1147  root -l fitDiagnosticsTest.root 
+ 1148  ls
+ 1149  vim drawDiagnostics.py
+ 1150  root -l fitDiagnosticsTest.root 
+ 1151  vim Data_rhalphalib.py 
+ 1152  root -l fitDiagnosticsTest.root 
+ 1153  ls
+ 1154  vim drawDiagnostics.py
+ 1155  python makePlot.py 
+ 1156  vim drawDiagnostics.py
+ 1157  python makePlot.py 
+ 1158  ls
+ 1159  cd results/
+ 1160  ls
+ 1161  mkdir ptbin3pass
+ 1162  mkdir ptbin4pass
+ 1163  mkdir ptbin5pass
+ 1164  mkdir ptbin6pass
+ 1165  mkdir ptbin7pass
+ 1166  cd ../
+ 1167  ls
+ 1168  python makePlot.py 
+ 1169  ls
+ 1170  vim drawDiagnostics.py
+ 1171  cd results/ptbin0pass/
+ 1172  display fit_b_jpt0.png 
+ 1173  cd ../
+ 1174  ls
+ 1175  rm ptbin*/*
+ 1176  ls ptbin0pass/
+ 1177  cd ../
+ 1178  ls
+ 1179  vim drawDiagnostics.py
+ 1180  python makePlot.py 
+ 1181  ls
+ 1182  cat Lim.out 
+ 1183  vim limit.sh 
+ 1184  ./limit.sh > Lim.out &
+ 1185  ls
+ 1186  cat shapes.txt 
+ 1187  ls
+ 1188  jobs
+ 1189  cat ../sig25_v3/Lim.out 
+ 1190  jobs
+ 1191  cat Lim.out 
+ 1192  diff limit.sh ../sig25_v3/limit.sh 
+ 1193  vim ../sig25_v3/Lim.out 
+ 1194  cd ../sig2
+ 1195  cd ../sig25_v3/
+ 1196  ls
+ 1197  vim limit.sh 
+ 1198  ./limit.sh > Lim.out &
+ 1199  cd ../sig25_v5/
+ 1200  ls
+ 1201  vim Lim.out 
+ 1202  vim limit.sh 
+ 1203  ./limit.sh > Lim.out &
+ 1204  kill %1
+ 1205  cd ../sig25_v3/
+ 1206  cp ../sig25_v5/limit.sh .
+ 1207  ./limit.sh > Lim.out &
+ 1208  jobs
+ 1209  top
+ 1210  ls
+ 1211  cat Lim.out 
+ 1212  cd ../sig25_v5/
+ 1213  cat Lim.out 
+ 1214  jobs
+ 1215  cd ../sig25_v3/
+ 1216  cat Lim.out 
+ 1217  vim limit.sh 
+ 1218  ./limit.sh > Lim.out &
+ 1219  cd ../sig25_v5/
+ 1220  jobs
+ 1221  cat Lim.out 
+ 1222  vim limit.sh
+ 1223  ./limit.sh > Lim.out &
+ 1224  ls
+ 1225  vim drawDiagnostics.py
+ 1226  jobs
+ 1227  cat Lim.out 
+ 1228  jobs
+ 1229  cat Lim.out 
+ 1230  cd ../sig25_v3/
+ 1231  ls
+ 1232  vim Lim.out 
+ 1233  vim limit.sh 
+ 1234  ./limit.sh > Lim.out &
+ 1235  cd ../
+ 1236  ls
+ 1237  cd sig25_v3/
+ 1238  vim Lim.out 
+ 1239  vim limit.sh 
+ 1240  ./limit.sh > Lim.out &
+ 1241  cd ../sig25_v5/
+ 1242  ./limit.sh > Lim.out &
+ 1243  kill %2
+ 1244  vim limit.sh 
+ 1245  ./limit.sh > Lim.out &
+ 1246  jobs
+ 1247  cat Lim.out 
+ 1248  vim Lim.out 
+ 1249  ls
+ 1250  cd CMSSW_10_2_13/src/
+ 1251  ls
+ 1252  cd sig24_v3
+ 1253  cd sig25_v3
+ 1254  ls
+ 1255  vim limit.sh 
+ 1256  ls
+ 1257  ls output/testModel
+ 1258  vim limit.sh 
+ 1259  nohup ./limit.sh > Lim.out &
+ 1260  cmsenv
+ 1261  nohup ./limit.sh > Lim.out &
+ 1262  cat Lim.out 
+ 1263  cat limit.sh 
+ 1264  cat output/testModel/model_combined.txt 
+ 1265  ls
+ 1266  vim limit.sh 
+ 1267  nohup ./limit.sh > Lim.out &
+ 1268  cat Lim.out 
+ 1269  ls
+ 1270  exit
+ 1271  cd CMSSW_10_2_13/src/
+ 1272  ls
+ 1273  cd sig25_v3/
+ 1274  ls
+ 1275  vim shapes.txt 
+ 1276  vim Lim.out 
+ 1277  ls
+ 1278  vim limit.sh 
+ 1279  vim Lim.out 
+ 1280  cd ../
+ 1281  ls
+ 1282  cp -r sig25_v3 sig25_v3_1
+ 1283  cd sig25_v3_1/
+ 1284  ls
+ 1285  rm higgsCombineTest.*
+ 1286  ls
+ 1287  rm *.png
+ 1288  ls
+ 1289  rm fitDiagnosticsTest.root 
+ 1290  ls
+ 1291  cmsenv
+ 1292  ls
+ 1293  root -l FitHist.root 
+ 1294  ls
+ 1295  vim Data_rhalphalib.py 
+ 1296  rm nohup.out combine_logger.out Lim.out plots/ptbin*.png
+ 1297  ls
+ 1298  rm results/ptbin*/*
+ 1299  ls
+ 1300  cd output/testModel
+ 1301  ls
+ 1302  rm *
+ 1303  cd ../
+ 1304  ls
+ 1305  rm testModel.pkl testModel_Datafit.root 
+ 1306  cd ../
+ 1307  ls
+ 1308  python Data_rhalphalib.py 2018 > rhal.out &
+ 1309  cd ../
+ 1310  ls
+ 1311  vim version_key.txt 
+ 1312  cd sig25_v3_1/
+ 1313  ls
+ 1314  jobs
+ 1315  cat rhal.out 
+ 1316  ls
+ 1317  cat rhal.out 
+ 1318  ls
+ 1319  ls output/
+ 1320  ls output/testModel
+ 1321  cat make
+ 1322  cat make_workspace.sh 
+ 1323  ./make_workspace.sh 
+ 1324  ls
+ 1325  vim make_workspace.sh 
+ 1326  ./make_workspace.sh 
+ 1327  ls
+ 1328  cat limit.sh 
+ 1329  ./limit.sh > Lim.out
+ 1330  cat Lim.out 
+ 1331  cd ../sig25_v3
+ 1332  ls
+ 1333  vim make_workspace.sh 
+ 1334  rm output/testModel*
+ 1335  rm output/testModel/*
+ 1336  ./make_workspace.sh 
+ 1337  python Data_rhalphalib.py 2018 > rhal.out 
+ 1338  ./make_workspace.sh 
+ 1339  ls
+ 1340  ./limit.sh > Lim.out &
+ 1341  cat Lim.out 
+ 1342  jobs
+ 1343  cat Lim.out 
+ 1344  ls
+ 1345  cat Lim.out 
+ 1346  cd ../sig25_v4/
+ 1347  cat rhal.out 
+ 1348  rm rhal.out 
+ 1349  ls
+ 1350  python Data_rhalphalib.py 2018 > rhal.out
+ 1351  cp ../sig25_v3/make_workspace.sh .
+ 1352  cd ../sig25_v5
+ 1353  cp ../sig25_v3/make_workspace.sh .
+ 1354  ls
+ 1355  rm higgsCombineTest.*
+ 1356  rm fitDiagnosticsTest.root *.png
+ 1357  ls
+ 1358  python Data_rrm output/testModel*
+ 1359  rm output/testModel*
+ 1360  rm output/testModel/*
+ 1361  python Data_rhalphalib.py 2018 > rhal.out 
+ 1362  ls
+ 1363  ./make_workspace.sh 
+ 1364  ls
+ 1365  ./limit.sh > Lim.out 
+ 1366  cat Lim.out 
+ 1367  vim limit.sh 
+ 1368  ls
+ 1369  ./limit.sh > Lim.out 
+ 1370  cat Lim.out 
+ 1371  cd ../sig25_v4
+ 1372  ls
+ 1373  cat rhal.out 
+ 1374  ls
+ 1375  python Data_rhalphalib.py 2018 > rhal.out 
+ 1376  ls
+ 1377  cd ../
+ 1378  cp -r sig25_v4 sig25_v4_1
+ 1379  vim version_key.txt 
+ 1380  cd sig25_v4_1/
+ 1381  ls
+ 1382  rm *.png
+ 1383  ls
+ 1384  exot
+ 1385  exit
+ 1386  condor_q akobert
+ 1387  exit
+ 1388  ls
+ 1389  cd CMSSW_10_2_13/src/
+ 1390  ls
+ 1391  cmsenv
+ 1392  ls
+ 1393  cd sig25_v3
+ 1394  ls
+ 1395  cd ../sig25_v4_1/
+ 1396  ls
+ 1397  cat ../version_key.txt 
+ 1398  vim ../version_key.txt 
+ 1399  ls
+ 1400  ls ../
+ 1401  vim ../sig25_v3_1/
+ 1402  vim ../version_key.txt 
+ 1403  ls
+ 1404  vim Data_rhalphalib.py 
+ 1405  vim initial_vals.csv 
+ 1406  ls
+ 1407  python Data_rhalphalib.py 2018 > rhal.out &
+ 1408  vim Data_rhalphalib.py 
+ 1409  python Data_rhalphalib.py 2018 > rhal.out &
+ 1410  cat rhal.out 
+ 1411  vim initial_vals.csv 
+ 1412  python Data_rhalphalib.py 2018 > rhal.out &
+ 1413  vim initial_vals.csv 
+ 1414  python Data_rhalphalib.py 2018 > rhal.out &
+ 1415  ls
+ 1416  cat rhal.out 
+ 1417  vim initial_vals.csv 
+ 1418  python Data_rhalphalib.py 2018 > rhal.out &
+ 1419  vim rhal.out 
+ 1420  vim initial_vals.csv 
+ 1421  python Data_rhalphalib.py 2018 > rhal.out &
+ 1422  vim rhal.out 
+ 1423  vim initial_vals.csv 
+ 1424  vim rhal.out 
+ 1425  vim initial_vals.csv 
+ 1426  python Data_rhalphalib.py 2018 > rhal.out &
+ 1427  cat rhal.out 
+ 1428  vim initial_vals.csv 
+ 1429  python Data_rhalphalib.py 2018 > rhal.out &
+ 1430  ls
+ 1431  cd ../
+ 1432  ls
+ 1433  cd sig25_v3
+ 1434  ls
+ 1435  python makePlot.py 
+ 1436  cat make_workspace.sh 
+ 1437  cat shapes.sh 
+ 1438  ./shapes.sh
+ 1439  ls
+ 1440  mv *.png plots/
+ 1441  ls
+ 1442  cd ../sig25_v5/
+ 1443  ls
+ 1444  cat make
+ 1445  cat make_workspace.sh 
+ 1446  ./shapes.sh &
+ 1447  cd 
+ 1448  ls
+ 1449  exit
+ 1450  ls
+ 1451  cd CMSSW_10_2_13/
+ 1452  ls
+ 1453  cd src/
+ 1454  ls
+ 1455  cd sig25_v3
+ 1456  ls
+ 1457  vim Lim.out 
+ 1458  cd ../sig25_v5
+ 1459  ls
+ 1460  vim Lim.out 
+ 1461  cd ../sig25_v3_1/
+ 1462  ls
+ 1463  cat Lim.out 
+ 1464  cat make_workspace.sh 
+ 1465  exit
+ 1466  ls
+ 1467  cd CMSSW_10_2_13/src/
+ 1468  ls
+ 1469  cd sig25_V3
+ 1470  ls
+ 1471  cd sig25_v3
+ 1472  ls
+ 1473  python makePlot.py 
+ 1474  cmsenv
+ 1475  python makePlot.py 
+ 1476  vim drawDiagnostics.py
+ 1477  cd ../sig25_v5/
+ 1478  ls
+ 1479  mv *.png plots/
+ 1480  ls
+ 1481  python makePlot.py 
+ 1482  ls
+ 1483  cat Lim.out 
+ 1484  cat ../sig25_v3/Lim.out 
+ 1485  ls
+ 1486  ls b
+ 1487  ls backup/
+ 1488  cd ../sig25_v3
+ 1489  ls
+ 1490  ls backup/
+ 1491  cp drawDiagnostics.py backup/drawDiagnostics_backup.py
+ 1492  ls
+ 1493  vim drawDiagnostics.py
+ 1494  ls
+ 1495  python makePlot.py 
+ 1496  vim drawDiagnostics.py
+ 1497  python makePlot.py 
+ 1498  ls
+ 1499  cd output/
+ 1500  ls
+ 1501  cd ../
+ 1502  ls
+ 1503  cd results/
+ 1504  ls
+ 1505  rm */*.png
+ 1506  cd ../
+ 1507  ls
+ 1508  vim drawDiagnostics.py
+ 1509  python makePlot.py 
+ 1510  vim drawDiagnostics.py
+ 1511  python makePlot.py &
+ 1512  cd ../
+ 1513  ls
+ 1514  cd sig25_v5/
+ 1515  cp ../sig25_v3/drawDiagnostics.py .
+ 1516  ls
+ 1517  vim makePlot.py 
+ 1518  vim drawDiagnostics.py
+ 1519  python makePlot.py &
+ 1520  jobs
+ 1521  ls
+ 1522  cd ../sig25_v4_1/
+ 1523  ls
+ 1524  vim initial_vals.csv 
+ 1525  python Data_rhalphalib.py 2018 > rhal.out 
+ 1526  vim rhal.out 
+ 1527  vim initial_vals.csv 
+ 1528  python Data_rhalphalib.py 2018 > rhal.out 
+ 1529  vim rhal.out 
+ 1530  vim initial_vals.csv 
+ 1531  python Data_rhalphalib.py 2018 > rhal.out 
+ 1532  vim rhal.out 
+ 1533  vim initial_vals.csv 
+ 1534  python Data_rhalphalib.py 2018 > rhal.out 
+ 1535  vim rhal.out 
+ 1536  ls
+ 1537  diff Data_rhalphalib.py ../sig25_v3/Data_rhalphalib.py 
+ 1538  vim Data_rhalphalib.py 
+ 1539  python Data_rhalphalib.py 2018 > rhal.out 
+ 1540  vim rhal.out 
+ 1541  vim Data_rhalphalib.py 
+ 1542  python Data_rhalphalib.py 2018 > rhal.out 
+ 1543  exit
+ 1544  ls
+ 1545  cd CMSSW_10_2_13/src/
+ 1546  ls
+ 1547  cmsenv
+ 1548  cat version_key.txt 
+ 1549  cp -r sig25_v4_1 sig25_v4_2
+ 1550  cp -r sig25_v4_1 sig25_v4_3
+ 1551  ls
+ 1552  vim version_key.txt 
+ 1553  ls
+ 1554  cat version_key.txt
+ 1555  cd sig25_v4_2
+ 1556  ls
+ 1557  vim Data_rhalphalib.py 
+ 1558  ls
+ 1559  vim initial_vals.csv 
+ 1560  cd ../sig25_v4_v3
+ 1561  cd ../sig25_v4_3
+ 1562  ls
+ 1563  vim Data_rhalphalib.py 
+ 1564  cd ../
+ 1565  ls
+ 1566  cat version_key.txt 
+ 1567  cd sig25_v4_2
+ 1568  vim Data_rhalphalib.py 
+ 1569  cd ../sig25_v4_3/
+ 1570  ls
+ 1571  vim Data_rhalphalib.py 
+ 1572  cp ../sig25_v3/initial_vals.csv .
+ 1573  vim ../sig25_v3/rhal.out 
+ 1574  vim initial_vals.csv 
+ 1575  ls
+ 1576  python Data_rhalphalib.py 2018 > rhal.out 
+ 1577  ls
+ 1578  vim rhal.out 
+ 1579  vim Data_rhalphalib.py 
+ 1580  vim initial_vals.csv 
+ 1581  python Data_rhalphalib.py 2018 > rhal.out 
+ 1582  cat rhal.out 
+ 1583  vim Data_rhalphalib.py 
+ 1584  vim initial_vals.csv 
+ 1585  python Data_rhalphalib.py 2018 > rhal.out 
+ 1586  cat rhal.out 
+ 1587  vim initial_vals.csv 
+ 1588  python Data_rhalphalib.py 2018 > rhal.out 
+ 1589  cat rhal.out 
+ 1590  ls
+ 1591  ./make_workspace.sh 
+ 1592  ls
+ 1593  cat make_workspace.sh 
+ 1594  ls
+ 1595  vim shapes.sh 
+ 1596  cat shapes.sh 
+ 1597  nohup ./shapes.sh > shapes.txt &
+ 1598  nohup ./limit.sh > Lim.out &
+ 1599  jobs
+ 1600  cd ../
+ 1601  ls
+ 1602  cd sig25_v3
+ 1603  l
+ 1604  ls
+ 1605  vim drawDiagnostics.py
+ 1606  vim applyTF.py
+ 1607  vim drawDiagnostics.py
+ 1608  jobs
+ 1609  top
+ 1610  ls
+ 1611  python makePlot.py 
+ 1612  vim drawDiagnostics.py
+ 1613  python makePlot.py 
+ 1614  vim drawDiagnostics.py
+ 1615  python makePlot.py 
+ 1616  vim drawDiagnostics.py
+ 1617  ls
+ 1618  cd ../
+ 1619  ls
+ 1620  cd sig25_v5/
+ 1621  ls
+ 1622  vim drawDiagnostics.py
+ 1623  ls
+ 1624  root -l fitDiagnosticsTest.root 
+ 1625  vim drawDiagnostics.py
+ 1626  python makePlot.py 
+ 1627  vim drawDiagnostics.py
+ 1628  python makePlot.py 
+ 1629  ls
+ 1630  cd ../
+ 1631  ls
+ 1632  cd sig25_v4_3
+ 1633  ls
+ 1634  cat rhal.out 
+ 1635  ls
+ 1636  jobs
+ 1637  cp ../sig25_v3/drawDiagnostics.py .
+ 1638  cp ../sig25_v3/drawDiagnostics.py ../sig25_v4_2/
+ 1639  cp ../sig25_v3/drawDiagnostics.py ../sig25_v4_1/
+ 1640  cp ../sig25_v3/drawDiagnostics.py ../sig25_v4/
+ 1641  cd ../sig25_v4_2
+ 1642  vim ../sig25_v4_3/rhal.out 
+ 1643  vim initial_vals.csv 
+ 1644  ls
+ 1645  python Data_rhalphalib.py 2018 > rhal.out &
+ 1646  jobs
+ 1647  vim rhal.out 
+ 1648  vim initial_vals.csv 
+ 1649  python Data_rhalphalib.py 2018 > rhal.out &
+ 1650  jobs
+ 1651  top
+ 1652  jobs
+ 1653  cat rhal.out 
+ 1654  vim initial_vals.csv 
+ 1655  python Data_rhalphalib.py 2018 > rhal.out &
+ 1656  cat rhal.out 
+ 1657  vim rhal.out 
+ 1658  vim initial_vals.csv 
+ 1659  python Data_rhalphalib.py 2018 > rhal.out &
+ 1660  combine
+ 1661  condor_q akobert
+ 1662  jobs
+ 1663  cat rhal.out 
+ 1664  vim initial_vals.csv 
+ 1665  python Data_rhalphalib.py 2018 > rhal.out &
+ 1666  jobs
+ 1667  cat rhal.out 
+ 1668  vim rhal.out 
+ 1669  vim initial_vals.csv 
+ 1670  python Data_rhalphalib.py 2018 > rhal.out &
+ 1671  cat rhal.out 
+ 1672  vim initial_vals.csv 
+ 1673  python Data_rhalphalib.py 2018 > rhal.out &
+ 1674  cat rhal.out 
+ 1675  vim initial_vals.csv 
+ 1676  python Data_rhalphalib.py 2018 > rhal.out &
+ 1677  cat rhal.out 
+ 1678  vim initial_vals.csv 
+ 1679  python Data_rhalphalib.py 2018 > rhal.out &
+ 1680  cat rhal.out 
+ 1681  cd ../sig25_v4_3
+ 1682  ls
+ 1683  mv *.png plots/
+ 1684  ls
+ 1685  cat drawDiagnostics.py
+ 1686  python makePlot.py 
+ 1687  jobs
+ 1688  ls
+ 1689  root -l fitDiagnosticsTest.root 
+ 1690  ls
+ 1691  jobs
+ 1692  cat significance.sh 
+ 1693  nohup ./shapes.sh > shapes.txt &
+ 1694  cd ~/CMSSW_11_1_0_pre7/src/RData/signalMC/
+ 1695  ls
+ 1696  cat 75sample.py 
+ 1697  vim 75sample.py 
+ 1698  ls
+ 1699  cd ../
+ 1700  vim 75sample.py 
+ 1701  exit
+ 1702  ls
+ 1703  cd CMSSW_11_1_0_pre7/src/
+ 1704  ls
+ 1705  cmsenv
+ 1706  dasgoclient
+ 1707  voms-proxy-init -voms cms -rfc
+ 1708  dasgoclient -query="file dataset=/VectorZPrimeGammaToQQGamma_GpT75_M75_TuneCP5_13TeV-madgraph-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM | grep file.name" > myfiles.txt
+ 1709  ls
+ 1710  cat myfiles.txt 
+ 1711  cat 75files.txt 
+ 1712  dasgoclient -query="file dataset=/VectorZPrimeGammaToQQGamma_GpT75_M75_TuneCP5_13TeV-madgraph-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM | grep file.name" > 75files.txt
+ 1713  ls
+ 1714  rm myfiles.txt 
+ 1715  mkdir XScheck
+ 1716  mv 75files.txt XScheck/
+ 1717  cd XScheck/
+ 1718  ls
+ 1719  cmsRun ana.py inputFiles="75files.txt" maxEvents=100000
+ 1720  curl https://raw.githubusercontent.com/cms-sw/genproductions/master/Utilities/calculateXSectionAndFilterEfficiency/genXsec_cfg.py -o ana.py
+ 1721  ls
+ 1722  cat ana.py 
+ 1723  cmsRun ana.py inputFiles="75files.txt" maxEvents=100000
+ 1724  ls
+ 1725  vim 75files.txt 
+ 1726  cmsRun ana.py inputFiles="/store/mc/RunIISummer20UL18MiniAODv2/VectorZPrimeGammaToQQGamma_GpT75_M75_TuneCP5_13TeV-madgraph-pythia8/MINIAODSIM/106X_upgrade2018_realistic_v16_L1v1-v2/40000/2130148F-1290-4B4A-9D75-805B610FD058.root" maxEvents=100000
+ 1727  cmsRun ana.py inputFiles="75files.txt" maxEvents=100000
+ 1728  cmsRun ana.py inputFiles="75files" maxEvents=100000
+ 1729  cmsRun ana.py inputFiles="75files.txt" maxEvents=100000
+ 1730  cat 75files.txt 
+ 1731  cmsRun ana.py inputFiles="75files.txt" maxEvents=100000
+ 1732  cmsRun ana.py inputFiles="./75files.txt" maxEvents=100000
+ 1733  pwd
+ 1734  cmsRun ana.py inputFiles="/home/akobert/CMSSW_11_1_0_pre7/src/XScheck/75files.txt" maxEvents=100000
+ 1735  cmsRun ana.py inputFiles=75files.txt maxEvents=100000
+ 1736  mv 75files.txt myfiles.txt
+ 1737  cmsRun ana.py inputFiles="myfiles.txt" maxEvents=100000
+ 1738  ls
+ 1739  mv myfiles.txt 75files.txt
+ 1740  cmsRun ana.py inputFiles="myfiles.txt" maxEvents=-1
+ 1741  cmsRun ana.py inputFiles= "myfiles.txt" maxEvents=-1
+ 1742  cat ana.py 
+ 1743  cmsRun ana.py inputFiles="myfiles.txt" maxEvents=100000
+ 1744  cd ~
+ 1745  ls
+ 1746  cmsrel CMSSW_10_6_12
+ 1747  cd CMSSW_10_6_12/src/
+ 1748  cmsenv
+ 1749  ls
+ 1750  curl https://raw.githubusercontent.com/cms-sw/genproductions/master/Utilities/calculateXSectionAndFilterEfficiency/genXsec_cfg.py -o ana.py
+ 1751  cp ~/CMSSW_11_1_0_pre7/src/XScheck/75files.txt .
+ 1752  ls
+ 1753  cmsRun ana.py inputFiles="75files.txt" maxEvents=-1
+ 1754  cd ../
+ 1755  ls
+ 1756  rm -r CMSSW_10_6_12/
+ 1757  ls
+ 1758  cd CMSSW_11_1_0_pre7/src/
+ 1759  cmsenv
+ 1760  ls
+ 1761  cd XScheck/
+ 1762  ls
+ 1763  cat 75files.txt 
+ 1764  cmsRun ana.py inputFiles="/store/mc/RunIISummer20UL18MiniAODv2/VectorZPrimeGammaToQQGamma_GpT75_M75_TuneCP5_13TeV-madgraph-pythia8/MINIAODSIM/106X_upgrade2018_realistic_v16_L1v1-v2/40000/2130148F-1290-4B4A-9D75-805B610FD058.root" maxEvents=-1
+ 1765  /store/mc/RunIISummer20UL18MiniAODv2/VectorZPrimeGammaToQQGamma_GpT75_M75_TuneCP5_13TeV-madgraph-pythia8/MINIAODSIM/106X_upgrade2018_realistic_v16_L1v1-v2/40000/BD3C0DF9-6CE6-A041-B1A8-05F85CA2E376.root
+ 1766  dasgoclient -query="file dataset=/VectorZPrimeGammaToQQGamma_GpT75_M10_TuneCP5_13TeV-madgraph-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM | grep file.name" > 10files.txt
+ 1767  dasgoclient -query="file dataset=/VectorZPrimeGammaToQQGamma_GpT75_M20_TuneCP5_13TeV-madgraph-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM | grep file.name" > 20files.txt
+ 1768  dasgoclient -query="file dataset=/VectorZPrimeGammaToQQGamma_GpT75_M25_TuneCP5_13TeV-madgraph-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM | grep file.name" > 25files.txt
+ 1769  dasgoclient -query="file dataset=/VectorZPrimeGammaToQQGamma_GpT75_M50_TuneCP5_13TeV-madgraph-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM | grep file.name" > 50files.txt
+ 1770  dasgoclient -query="file dataset=/VectorZPrimeGammaToQQGamma_GpT75_M75_TuneCP5_13TeV-madgraph-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM | grep file.name" > 75files.txt
+ 1771  dasgoclient -query="file dataset=/VectorZPrimeGammaToQQGamma_GpT75_M75_TuneCP5_13TeV-madgraph-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM | grep file.name" > 100files.txt
+ 1772  dasgoclient -query="file dataset=/VectorZPrimeGammaToQQGamma_GpT75_M100_TuneCP5_13TeV-madgraph-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM | grep file.name" > 100files.txt
+ 1773  dasgoclient -query="file dataset=/VectorZPrimeGammaToQQGamma_GpT75_M125_TuneCP5_13TeV-madgraph-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM | grep file.name" > 125files.txt
+ 1774  dasgoclient -query="file dataset=/VectorZPrimeGammaToQQGamma_GpT75_M150_TuneCP5_13TeV-madgraph-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM | grep file.name" > 150files.txt
+ 1775  ls
+ 1776  cmsRun ana.py inputFiles="*.txt" maxEvents=-1
+ 1777  cat ana.py 
+ 1778  cmsRun ana.py inputFiles_load="75files.txt" maxEvents=-1
+ 1779  cmsRun ana.py inputFiles_load="10files.txt" maxEvents=-1 > 10sec.txt &
+ 1780  jobs
+ 1781  kill %1
+ 1782  kill %2
+ 1783  jobs
+ 1784  top
+ 1785  kill 22239
+ 1786  top
+ 1787  jobs
+ 1788  ls
+ 1789  cmsRun ana.py inputFiles_load="10files.txt" maxEvents=-1 > 10sec.txt &
+ 1790  cmsRun ana.py inputFiles_load="20files.txt" maxEvents=-1 > 20sec.txt &
+ 1791  cmsRun ana.py inputFiles_load="25files.txt" maxEvents=-1 > 25sec.txt &
+ 1792  jobs
+ 1793  top
+ 1794  jobs
+ 1795  cmsRun ana.py inputFiles_load="25files.txt" maxEvents=-1 > 250sec.txt &
+ 1796  jobs
+ 1797  kill %4
+ 1798  /store/mc/RunIISummer20UL18MiniAODv2/VectorZPrimeGammaToQQGamma_GpT75_M75_TuneCP5_13TeV-madgraph-pythia8/MINIAODSIM/106X_upgrade2018_realistic_v16_L1v1-v2/40000/2130148F-1290-4B4A-9D75-805B610FD058.root
+ 1799  /store/mc/RunIISummer20UL18MiniAODv2/VectorZPrimeGammaToQQGamma_GpT75_M75_TuneCP5_13TeV-madgraph-pythia8/MINIAODSIM/106X_upgrade2018_realistic_v16_L1v1-v2/40000/BD3C0DF9-6CE6-A041-B1A8-05F85CA2E376.root
+ 1800  jobs
+ 1801  ls
+ 1802  cat 10sec.txt 
+ 1803  rm 10sec.txt 20sec.txt 25sec.txt
+ 1804  ls
+ 1805  rm 250sec.txt 
+ 1806  ls
+ 1807  cmsRun ana.py inputFiles_load="10files.txt" maxEvents=-1 > 10sec.txt &
+ 1808  vim 10sec.txt
+ 1809  ls
+ 1810  cmsRun ana.py inputFiles_load="20files.txt" maxEvents=-1 &
+ 1811  jobs
+ 1812  vim 20sec.txt
+ 1813  ls
+ 1814  vim 10sec.txt 
+ 1815  cd ../
+ 1816  ls
+ 1817  cd RData/
+ 1818  ls
+ 1819  cd UL/
+ 1820  ls
+ 1821  vim dataSample.py 
+ 1822  vim run.jdl 
+ 1823  vim run.sh 
+ 1824  vim dataSample.py 
+ 1825  ls
+ 1826  vim Data_Processor.py
+ 1827  ls
+ 1828  condor_submit run.jdl 
+ 1829  condor_q akobert
+ 1830  ls
+ 1831  cd /cms/xaastorage/NanoAOD/2018/JUNE19/
+ 1832  ls
+ 1833  cd UL/signal/
+ 1834  ls
+ 1835  cd M10
+ 1836  ls
+ 1837  root -l jetToolbox_nano_mc_2018_M10_0.root 
+ 1838  cd ../M20
+ 1839  root -l jetToolbox_nano_mc_2018_M20_0.root 
+ 1840  cd ../M25
+ 1841  root -l jetToolbox_nano_mc_2018_M25_0.root 
+ 1842  cd ../M50/
+ 1843  root -l jetToolbox_nano_mc_2018_M50_0.root 
+ 1844  ls
+ 1845  cd ../M75/
+ 1846  root -l jetToolbox_nano_mc_2018_M75_0.root 
+ 1847  cd ../M100
+ 1848  ls
+ 1849  root -l jetToolbox_nano_mc_2018_M100_0.root 
+ 1850  cd ../M125/
+ 1851  root -l jetToolbox_nano_mc_2018_M125_0.root 
+ 1852  cd ../M150/
+ 1853  root -l jetToolbox_nano_mc_2018_M150_0.root 
+ 1854  ls
+ 1855  cd ~
+ 1856  ls
+ 1857  cd CMSSW_11_1_0_pre7/src/RData/UL/signalMC/
+ 1858  ls
+ 1859  ls /cms/xaastorage/NanoAOD/2018/JUNE19/UL/signal/M10
+ 1860  ls /cms/xaastorage/NanoAOD/2018/JUNE19/UL/signal/M20/
+ 1861  ls /cms/xaastorage/NanoAOD/2018/JUNE19/UL/signal/M25
+ 1862  ls /cms/xaastorage/NanoAOD/2018/JUNE19/UL/signal/M50
+ 1863  ls /cms/xaastorage/NanoAOD/2018/JUNE19/UL/signal/M75
+ 1864  ls /cms/xaastorage/NanoAOD/2018/JUNE19/UL/signal/M100
+ 1865  ls /cms/xaastorage/NanoAOD/2018/JUNE19/UL/signal/M125
+ 1866  ls /cms/xaastorage/NanoAOD/2018/JUNE19/UL/signal/M150
+ 1867  ls
+ 1868  nohup python 25sample.py > 25sample.out &
+ 1869  nohup python 50sample.py > 50sample.out &
+ 1870  nohup python 75sample.py > 75sample.out &
+ 1871  nohup python 100sample.py > 100sample.out &
+ 1872  nohup python 125sample.py > 125sample.out &
+ 1873  nohup python 150sample.py > 150sample.out &
+ 1874  jobs
+ 1875  top
+ 1876  ls
+ 1877  root -l RData_10GeV_UL_20.root 
+ 1878  ls
+ 1879  root -l RData_20GeV_UL_20.root RData_25GeV_UL_20.root RData_50GeV_UL_20.root RData_75GeV_UL_20.root RData_100GeV_UL_20.root RData_125GeV_UL_20.root RData_150GeV_UL_20.root 
+ 1880  ls
+ 1881  cd ../
+ 1882  ls
+ 1883  cd ../
+ 1884  ls
+ 1885  cd ../XScheck/
+ 1886  ls
+ 1887  cmsRun ana.py inputFiles_load="25files.txt" maxEvents=-1 &
+ 1888  vim 25sec.txt
+ 1889  ls
+ 1890  cmsRun ana.py inputFiles_load="50files.txt" maxEvents=-1 &
+ 1891  vim 50sec.txt
+ 1892  cmsRun ana.py inputFiles_load="75files.txt" maxEvents=-1 &
+ 1893  vim 75sec.txt
+ 1894  exit
+ 1895  cd CMSSW_10_2_13/src/
+ 1896  cmsenv
+ 1897  ls
+ 1898  cd sig25_v3
+ 1899  ls
+ 1900  ls results/
+ 1901  ls results/ptbin0pass/
+ 1902  cd results/
+ 1903  ls
+ 1904  cd rm */*.root
+ 1905  rm */*.root
+ 1906  ls
+ 1907  ls *
+ 1908  cd ../
+ 1909  ls
+ 1910  cd ../sig25_v5
+ 1911  ls
+ 1912  cd results/
+ 1913  ls
+ 1914  ls *
+ 1915  rm */*placehold.png
+ 1916  rm */*.root
+ 1917  ls *
+ 1918  cd ../
+ 1919  ls
+ 1920  cd sig25_v4_3
+ 1921  ls
+ 1922  mv *.png plots/
+ 1923  ls
+ 1924  ls results/
+ 1925  ls results/*
+ 1926  cd results/
+ 1927  ls
+ 1928  mkdir ptbin3pass
+ 1929  mkdir ptbin4pass
+ 1930  mkdir ptbin5pass
+ 1931  mkdir ptbin6pass
+ 1932  mkdir ptbin7pass
+ 1933  ls
+ 1934  cd ../
+ 1935  ls
+ 1936  cat Lim.out 
+ 1937  ls
+ 1938  vim limit.sh 
+ 1939  cat ../sig25_v3/limit.sh 
+ 1940  vim limit.sh 
+ 1941  cat ../sig25_v4_2/limit.sh 
+ 1942  cp limit.sh ../sig25_v4_2/
+ 1943  cp limit.sh ../sig25_v4_1/
+ 1944  cp limit.sh ../sig25_v4/
+ 1945  ls
+ 1946  nohup ./limit.sh > Lim.out &
+ 1947  jobs
+ 1948  python makePlot.py 
+ 1949  jobs
+ 1950  cat Lim.out 
+ 1951  top
+ 1952  jobs
+ 1953  ls
+ 1954  cat Lim.out 
+ 1955  jobs
+ 1956  topo
+ 1957  topq
+ 1958  top
+ 1959  condor_q akobert
+ 1960  cat Lim.out 
+ 1961  ls
+ 1962  python makePlot.py 
+ 1963  root -l fitDiagnosticsTest.root 
+ 1964  ls
+ 1965  cat shapes.sh 
+ 1966  cat ../sig25_v3/shapes.sh 
+ 1967  ls
+ 1968  rm fitDiagnosticsTest.root 
+ 1969  ./shapes.sh > shapes.txt &
+ 1970  jobs
+ 1971  cat shapes.txt 
+ 1972  ls
+ 1973  cd ../sig25_v4_2
+ 1974  ls
+ 1975  cat rhal.out 
+ 1976  vim initial_vals.csv 
+ 1977  ls
+ 1978  python Data_rhalphalib.py 2018 > rhal.out &
+ 1979  jobs
+ 1980  cat rhal.out 
+ 1981  vim ../sig25_v4_3/rhal.out 
+ 1982  ls
+ 1983  vim initial_vals.csv 
+ 1984  python Data_rhalphalib.py 2018 > rhal.out &
+ 1985  vim initial_vals.csv 
+ 1986  vim ../sig25_v4_3/rhal.out 
+ 1987  vim initial_vals.csv 
+ 1988  python Data_rhalphalib.py 2018 > rhal.out &
+ 1989  ls
+ 1990  cd ../sig25_v4_3
+ 1991  ls
+ 1992  mv *.png plots/
+ 1993  ls
+ 1994  python makePlot.py 
+ 1995  jobs
+ 1996  cat shapes.txt 
+ 1997  jobs
+ 1998  cat shapes.txt 
+ 1999  condor_q akobert
+ 2000  ls
+ 2001  cd CMSSW_10_2_13/src/sig25_v4_3/
+ 2002  ls
+ 2003  mv *.png plots/
+ 2004  ls
+ 2005  cat shapes.txt 
+ 2006  ls
+ 2007  vim Data_rhalphalib.py 
+ 2008  cd ../sig25_v5
+ 2009  ls
+ 2010  vim drawDiagnostics.py
+ 2011  python makePlot.py 
+ 2012  cmsenv
+ 2013  python makePlot.py 
+ 2014  cd ../sig25_v4_3/
+ 2015  ls
+ 2016  source make_workspace.sh 
+ 2017  cd ../../
+ 2018  ./make_workspace.sh 
+ 2019  ls
+ 2020  cat make_workspace.sh 
+ 2021  vim output/testModel/build.sh 
+ 2022  vim make_workspace.sh 
+ 2023  cat shapes.txt 
+ 2024  vim shapes.txt 
+ 2025  ls
+ 2026  cd output/
+ 2027  ls
+ 2028  cd testModel
+ 2029  ls
+ 2030  vim model_combined.txt 
+ 2031  la
+ 2032  cd ../
+ 2033  ls
+ 2034  cd ../
+ 2035  ls
+ 2036  cd ../sig25_v3
+ 2037  ls
+ 2038  cat shapes.txt 
+ 2039  vim shapes.txt 
+ 2040  cd ../sig25_v3
+ 2041  ls
+ 2042  cd ../sig25_v4_3
+ 2043  ls
+ 2044  vim shapes.txt 
+ 2045  cd output/testModel
+ 2046  ls
+ 2047  vim model_combined.txt 
+ 2048  ls
+ 2049  top
+ 2050  condor_q akobert
+ 2051  cd ~/CMSSW_11_1_0_pre7/src/XScheck/
+ 2052  ls
+ 2053  vim 75sec.txt 
+ 2054  vim 10sec.txt 
+ 2055  vim 75sec.txt 
+ 2056  vim 10sec.txt 
+ 2057  vim 75sec.txt 
+ 2058  vim 10sec.txt 
+ 2059  vim 75sec.txt 
+ 2060  vim 10sec.txt 
+ 2061  cd ../RData/UL/signalMC/
+ 2062  ls
+ 2063  vim 10sample.out 
+ 2064  vim 10sample.py 
+ 2065  cd ../../../XScheck/
+ 2066  ls
+ 2067  vim 75sec.txt 
+ 2068  ls
+ 2069  cmsenv
+ 2070  cmsRun ana.py inputFiles_load="100files.txt" maxEvents=-1 &
+ 2071  cd ../RData/UL/signalMC/
+ 2072  ls
+ 2073  vim 10sample.out 
+ 2074  vim 75sample.out 
+ 2075  cd ../../../XScheck/
+ 2076  ls
+ 2077  vim 75sec.txt 
+ 2078  dasgoclient -query="file dataset=/WGToJJA_01J_SM_5f_NLO_FXFX_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v2/MINIAODSIM | grep file.name" > myfiles.txt
+ 2079  history > hist
